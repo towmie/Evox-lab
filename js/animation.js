@@ -25,9 +25,9 @@ const sectionCollection = document.querySelectorAll('section');
 const sectionCollectionClass = document.querySelectorAll('.section');
 const currentSection = 0;
 
-// Crate dots
+// Create dots
 
-function crateDots() {
+function createDots() {
   sectionCollection.forEach(function (_, i) {
     dotsContainer.insertAdjacentHTML(
       'beforeend',
@@ -40,7 +40,7 @@ function crateDots() {
   });
 }
 
-crateDots();
+createDots();
 
 //  ==== Scroll to Section =====
 
