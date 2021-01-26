@@ -1,0 +1,154 @@
+.home {
+  background-image: url(../../img/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  // overflow: hidden;
+
+  //   position: relative;
+
+  &__section-box {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+  }
+
+  &__sections {
+    width: 20%;
+    height: 100%;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgb(105, 105, 105);
+    }
+
+    &:hover {
+      box-shadow: 0 0 75px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  &__text-wrapper {
+    //     font-family: 'BebasNeueBold', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+
+    // height: 100%;
+  }
+
+  &__title {
+    display: block;
+
+    font-size: 20rem;
+    letter-spacing: -1rem;
+    box-sizing: border-box;
+    position: relative;
+    &::before {
+      content: 'DESIGN';
+      position: absolute;
+      top: -38px;
+      left: 24px;
+      transform: scale(1.2);
+      opacity: 0.3;
+    }
+
+    &--agency {
+      display: block;
+      font-size: 20rem;
+      letter-spacing: -1rem;
+      margin-top: 16rem;
+      position: relative;
+
+      &::before {
+        content: 'AGENCY';
+        position: absolute;
+        top: 23px;
+        left: 0px;
+        transform: scale(1.2);
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__topics {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &__text-bg {
+    position: absolute;
+    width: 80vh;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    // background-image: url(../../img/triangleAboutUs.svg);
+    // background-repeat: no-repeat;
+  }
+
+  &__awards-links {
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 25rem;
+    left: -21.3rem;
+    transform: rotate(-90deg);
+    z-index: 10;
+  }
+  &__awards {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #a8d2d6;
+
+    position: relative;
+    padding: 20px 150px 20px 15px;
+    margin-left: -5px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 35px;
+      top: 18px;
+      right: 0;
+      background-image: url(../../img/w-blue2.png);
+      background-size: 100%;
+
+      transform: rotate(90deg);
+    }
+  }
+  &__awards-2 {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 150px 20px 15px;
+
+    background-color: #de7c40;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 35px;
+      top: 18px;
+      right: 0;
+      background-image: url(../../img/w-orange.png);
+      transform: rotate(90deg);
+    }
+  }
+}
