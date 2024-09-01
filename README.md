@@ -1,7 +1,7 @@
 # Evox-lab
 
 EvoxLab Copy
-visit: https://evox-10toqzsjk-andreis-projects-5e6a6d86.vercel.app/
+visit: https://evox-lab.vercel.app/
 
 ![Alt text](img/bg.png)
 
